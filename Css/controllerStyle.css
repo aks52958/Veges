@@ -1,49 +1,58 @@
-body{
+body {
     background-color: rgb(250, 250, 250);
     margin: 0 auto;
 }
-.header{
+
+.header {
     width: 100%;
     height: auto;
     margin: 0 auto;
     text-align: center;
 }
-.headerBrand{
+
+.headerBrand {
     width: 100%;
     height: auto;
     margin: 0 auto;
-    background-image:url(/VegetableShop/image/veges.png);
+    background-image: url(/image/veges.png);
 }
-.headerBrand a img{
+
+.headerBrand a img {
     width: 20%;
 }
-.wrap{
+
+.wrap {
     width: 100%;
     height: auto;
     margin: 0 auto;
 }
-.menu{
+
+.menu {
     width: 20%;
     height: 100%;
     border-right: 2px solid rgb(192, 190, 190);
     float: left;
 }
-.menu ul{
+
+.menu ul {
     font-size: xx-large;
     font-weight: normal;
 }
-.menu ul li{
+
+.menu ul li {
     margin: 15%;
     align-self: center;
     list-style-type: none;
 }
-.menu ul li img{
+
+.menu ul li img {
     width: 15%;
     height: auto;
     margin-right: 15%;
     align-self: center;
 }
-.selectionList{
+
+.selectionList {
     width: 80%;
     height: auto;
     border-bottom: 2px solid rgb(192, 190, 190);
