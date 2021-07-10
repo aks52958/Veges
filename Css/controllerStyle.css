@@ -11,7 +11,7 @@ body{
 .headerBrand{
     width: 100%;
     height: auto;
-    background-image:url(/VegetableShop/image/veges.png);
+    background-image:url(../image/veges.png);
 }
 .headerBrand a img{
     width: 20%;

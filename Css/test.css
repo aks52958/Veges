@@ -7,7 +7,7 @@ body{
     width: 100%;
     height: 200px;
     text-align: center;
-    background-image:url(/VegetableShop/image/veges.png);
+    background-image:url(../image/veges.png);
 }
 .header img{
     width: 50%;
