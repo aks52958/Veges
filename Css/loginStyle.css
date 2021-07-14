@@ -12,10 +12,10 @@ body{
     width: 100%;
     height: auto;
     margin: 0 auto;
-    background-image:url(/VegetableShop/image/veges.png);
+    background-image:url(../image/veges.png);
 }
 .headerBrand a img{
-    width: 20%;
+    max-width: 20%;
 }
 .wrap{
     width: 600px;
