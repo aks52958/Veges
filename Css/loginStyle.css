@@ -15,7 +15,7 @@ body{
     background-image:url(../image/veges.png);
 }
 .headerBrand a img{
-    width: 20%;
+    max-width: 20%;
 }
 .wrap{
     width: 600px;

@@ -10,7 +10,7 @@ body{
     background-image:url(../image/veges.png);
 }
 .header img{
-    width: 50%;
+    max-width: 50%;
     height: 200px;
 }
 .wrap{
@@ -31,44 +31,19 @@ body{
     list-style-type: none;
     float: left;
 }
-/* .homePage{
-    width: 60%;
-    height: 80px;
-    border-radius: 10px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 20%;
-    border-top: 1px solid rgb(10, 10, 10);
-    border-bottom: 1px solid rgb(10, 10, 10);
-    border-right: 2px solid rgb(10, 10, 10);
-    border-left: 2px solid rgb(10, 10, 10);
-    background-color: rgb(161, 161, 161);
-} */
-.imageIcon{
-    width: 30%;
-    height: 80px;
-    margin-right: 5%;
-    margin-left: 10%;
-    float: left;
+.pictureSqure{
+    max-width: 100%;
+    border: 2px solid rgb(0, 0, 0) ;
 }
-.textM{
-    width: auto;
-    float: left;
-    /* list-style-type: none; */
-    font-size: xx-large;
-    font-weight: normal;
-    /* text-align: initial; */
-    margin-top: 8%;
-    margin-left: 7%;
-    margin-right: 19%;
-    margin-bottom: 8%;
-    position: relative;
+.pictureSqure img{
+    margin-left: 23%;
+    margin-right: 24%;
 }
 .menuContent{
     width: auto;
     height: 1000px;
     margin-left: 20%;
-    background-color: yellow;
+    /* background-color: yellow; */
 }
 .footer{
     clear: both;
@@ -77,18 +52,16 @@ body{
     height: 100px;
     background-color: black;
 }
-.contentPages{
-    width: auto;
-    height: 5%;
-    display: flex;
-    flex-direction: row;
-    font-size: xx-large;
-    font-weight: bolder;
-    align-items: center;
-    justify-content: space-evenly;
-    border-bottom: 1px solid rgb(77, 77, 77);
+.contentIcons{
+    height: 8%;
 }
-.contentPages:focus,
-.contentPages:hover{
-    cursor: pointer;
+.contentButton{
+    font-size: 50px;
+    margin: 4px 2px;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    background-color: rgb(4 64 4);
+    border: none;
+    border-radius: 10px;
+    /* background: linear-gradient(-45deg, transparent 15px, rgb(0, 87, 12) 0); */
 }
