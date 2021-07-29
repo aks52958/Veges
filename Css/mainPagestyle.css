@@ -1,0 +1,215 @@
+body{
+    background-color: rgb(250, 250, 250);
+    margin: 0 auto;
+}
+.header{
+    width: 100%;
+    height: 102px;
+    margin: 0 auto;
+    text-align: center;
+}
+.headerBrand{
+    width: 100%;
+    height: 102px;
+    margin: 0 auto;
+    background-image:url(../image/veges.png);
+}
+.menuBox{
+    width: 20%;
+    height: 102px;
+    float: left;
+    position: inherit;
+    /* border-right: 3px solid rgb(10, 10, 10); */
+}
+.menuButton{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    background-color: rgb(7 45 0);
+    border-radius: 15px;
+    border: 2px solid rgb(250, 250, 250);
+}
+.menuButton img{
+    max-width: 65%;
+}
+.brandBox{
+    width: 60%;
+    height: 102px;
+    float: left;
+    position: inherit;
+    /* border-right: 3px solid rgb(10, 10, 10); */
+}
+.brandButton{
+    margin-left: 30%;
+    margin-right: 30%;
+}
+.brandButton a img{
+    max-width: 83%;
+}
+.cartBox{
+    width: 20%;
+    height: 102px;
+    float: right;
+    position: inherit;
+}
+.cartButton{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    background-color: rgb(7 45 0);
+    border-radius: 15px;
+    border: 2px solid rgb(250, 250, 250);
+}
+.cartButton a{
+    color: white;
+    font-size: xx-large;
+    text-decoration: none;
+}
+.wrap{
+    width: 100%;
+    height: auto;
+}
+.searchBox{
+    max-width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+.searchBox input{
+    margin: .4rem 0;
+    font-size: xx-large;
+    border: 2px solid rgb(169, 169, 169);
+}
+.searchBox button{
+    padding-left: 1%;
+    padding-right: 1%;
+    font-size: 170%;
+    font-weight: 500;
+    border: 2px solid rgb(169 169 169);
+}
+.sortBox{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+.dailyMemuBox{
+    max-width: 100%;
+    max-height: fit-content;
+}
+.dailyMenuPB{
+    max-width: 100%;
+    max-height: fit-content;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+.dailyMenuPB img{
+    max-width: 60%;
+}
+.comboBox{
+    max-width: 100%;
+    max-height: fit-content;
+}
+.comboPB{
+    max-width: 100%;
+    max-height: fit-content;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+.comboPB img{
+    max-width: 60%;
+}
+.snakesBox{
+    max-width: 100%;
+    max-height: fit-content;
+}
+.snakesPB{
+    max-width: 100%;
+    max-height: fit-content;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+.snakesPB img{
+    max-width: 60%;
+}
+.clothesBox{
+    max-width: 100%;
+    max-height: fit-content;
+}
+.clotherPB{
+    max-width: 100%;
+    max-height: fit-content;
+    border-radius: 50%;
+    margin-left: 10%;
+}
+.clotherPB img{
+    max-width: 60%;
+}
+.sortTextBox{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.dailyTB{
+    max-width: 100%;
+    height: auto;
+    margin-left: 35.9%;
+}
+.dailyTB a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+}
+.comboTB{
+    max-width: 100%;
+    height: auto;
+    margin-left: 3%;
+}
+.comboTB a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+}
+.snakesTB{
+    max-width: 100%;
+    height: auto;
+    margin-left: 5%;
+}
+.snakesTB a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+}
+.clothsTB{
+    max-width: 100%;
+    height: auto;
+    margin-left: 7%;
+}
+.clothsTB a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: bold;
+    color: black;
+}
+.menuArea{
+    max-width: 100%;
+    max-height: fit-content;
+    border-top: 2px solid rgb(169, 169, 169);
+    margin-top: 1%;
+    margin-left: 3%;
+    margin-right: 3%;
+}

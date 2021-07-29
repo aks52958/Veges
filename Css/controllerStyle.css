@@ -3,48 +3,84 @@ body{
     margin: 0 auto;
 }
 .header{
-    width: 100%;
-    height: auto;
     margin: 0 auto;
-    text-align: center;
-}
-.headerBrand{
     width: 100%;
-    height: auto;
+    height: 100%;
+    text-align: center;
     background-image:url(../image/veges.png);
 }
-.headerBrand a img{
-    width: 20%;
+.header img{
+    max-width: 20%;
 }
 .wrap{
-    width: 100%;
     margin: 0 auto;
+    width: 100%;
+    height: 1000px;
+    /* background-color: blue; */
     overflow: hidden;
 }
-.menu{
+.menuContainer{
     width: 20%;
-    border-right: 2px solid rgb(192, 190, 190);
+    height: 1000px;
     float: left;
+    border-right: 2px solid rgb(169, 169, 169);
+    /* background-color: pink; */
 }
-.menu ul{
-    font-size: xx-large;
-    font-weight: normal;
-}
-.menu ul li{
-    margin: 15%;
-    align-self: center;
+.menuPages ul li img{
     list-style-type: none;
-}
-.menu ul li img{
-    width: 15%;
-    height: auto;
-    margin-right: 15%;
-    align-self: center;
-}
-.selectionTab{
-    width: auto;
-    height: 5%;
-    border-bottom: 2px solid rgb(192, 190, 190);
     float: left;
-    margin-left: 5%;
+}
+.pictureSqure{
+    max-width: 80%;
+    margin-top: 10%;
+    margin-left: 10%;
+}
+.pictureSqure:hover{
+    border-radius: 50px;
+    background-color: rgba(84, 138, 74, 0.424)
+}
+.pictureSqure img{
+    margin-left: 16%;
+    margin-right: 24%;
+}
+.tabC{
+    width: auto;
+    height: 1000px;
+    margin-left: 20%;
+}
+.menuContent{
+    position: absolute;
+    max-width: 100%;
+    height: auto;
+    margin-left: 1%;
+    transition: opacity 1s;
+    /* background-color: yellow; */
+}
+.footer{
+    clear: both;
+    margin: 0 auto;
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+.contentIcons{
+    height: 6%;
+}
+.contentButton{
+    font-size: 35px;
+    margin: 4px 2px;
+    display: inline-block;
+    color: rgb(2, 2, 2);
+    background-color: rgb(250, 250, 250);
+    border: none;
+    border-radius: 15px;
+    /* background: linear-gradient(-45deg, transparent 15px, rgb(0, 87, 12) 0); */
+}
+.contentButton:hover{
+    background-color: rgba(84, 138, 74, 0.424)
+}
+.contentArea{
+    width: 100%;
+    height: auto;
+    border-top: 2px solid rgb(169, 169, 169);
 }
