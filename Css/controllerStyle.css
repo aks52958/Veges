@@ -1,86 +1,243 @@
 body{
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(234 234 234 / 58%);
     margin: 0 auto;
 }
+/* .fixedTop{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1030;
+} */
 .header{
     margin: 0 auto;
     width: 100%;
     height: 100%;
     text-align: center;
     background-image:url(../image/veges.png);
+    position: sticky;
 }
 .header img{
     max-width: 20%;
 }
 .wrap{
-    margin: 0 auto;
     width: 100%;
     height: 1000px;
     /* background-color: blue; */
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .menuContainer{
-    width: 20%;
-    height: 1000px;
+    width: 19.7%;
+    height: 107%;
     float: left;
+    /* margin-top: 5%; */
     border-right: 2px solid rgb(169, 169, 169);
+    background-color: rgb(234 234 234 / 58%);
     /* background-color: pink; */
 }
-.menuPages ul li img{
-    list-style-type: none;
-    float: left;
+.mcContainer{
+    width: 80%;
+    height: 100%;
+    float: right;
+    /* margin-top: 5%; */
+    background-color: rgb(234 234 234 / 58%);
+    /* position: relative; */
+}
+.menuButtons{
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 .pictureSqure{
-    max-width: 80%;
-    margin-top: 10%;
-    margin-left: 10%;
+    margin-bottom: 20%;
 }
 .pictureSqure:hover{
     border-radius: 50px;
-    background-color: rgba(84, 138, 74, 0.424)
+    background-color:  rgba(84, 138, 74, 0.424);
 }
 .pictureSqure img{
-    margin-left: 16%;
-    margin-right: 24%;
+    max-width: 100%;
 }
-.tabC{
-    width: auto;
-    height: 1000px;
-    margin-left: 20%;
+.tabPictureSqure{
+    padding: 0%;
+    margin: 0%;
+}
+.tabPictureSqure img:hover{
+    border-radius: 50px;
+    background-color:  rgba(84, 138, 74, 0.424);
+}
+.tabPictureSqure img{
+    max-width: 110%;
+}
+.menuTab ul li{
+    list-style: none;
+    margin-bottom: 20%;
 }
 .menuContent{
-    position: absolute;
     max-width: 100%;
-    height: auto;
-    margin-left: 1%;
-    transition: opacity 1s;
-    /* background-color: yellow; */
+    max-height: 100%;
+    /* position: absolute; */
+    /* border: 2px solid black; */
 }
-.footer{
-    clear: both;
-    margin: 0 auto;
-    width: 100%;
-    height: 100px;
-    background-color: black;
+.contentOne{
+    max-width: 100%;
+    border-bottom: 2px solid rgb(169, 169, 169);
 }
-.contentIcons{
-    height: 6%;
-}
-.contentButton{
-    font-size: 35px;
+.coButton{
+    font-size: 224%;
     margin: 4px 2px;
     display: inline-block;
     color: rgb(2, 2, 2);
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(234 234 234 / 58%);
     border: none;
     border-radius: 15px;
-    /* background: linear-gradient(-45deg, transparent 15px, rgb(0, 87, 12) 0); */
 }
-.contentButton:hover{
+.coButton:hover{
     background-color: rgba(84, 138, 74, 0.424)
 }
-.contentArea{
+.coTabs{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.innerContainer{
+    max-width: 100%;
+    /* background-color: antiquewhite; */
+}
+.innerContent{
+    max-width: 100%;
+}
+.topicSqure{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.functionBar{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchF{
+    width: 80%;
+}
+.searchF input{
     width: 100%;
-    height: auto;
+    height: 3em;
+    font: revert;
+    font-weight: 500;
+    color: black;
+    border: none;
+    background-color: rgb(210 210 210 / 53%);
+}
+.addF{
+    width: 5%;
+    margin: 0 1%;
+    background-color: rgb(210 210 210 / 53%);
+}
+.addF p{
+    padding: 4%;
+    margin: 0;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+    border: none;
+    background-color: rgb(210 210 210 / 53%);
+}
+.addF p:hover{
+    background-color: rgba(84, 138, 74, 0.424)
+}
+.saveF{
+    width: 5%;
+    background-color: rgb(210 210 210 / 53%);
+}
+.saveF p{
+    padding: 4%;
+    margin: 0;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+}
+.saveF p:hover{
+    background-color: rgba(84, 138, 74, 0.424)
+}
+.itemListSqure{
+    margin-top: 4%;
     border-top: 2px solid rgb(169, 169, 169);
+}
+.itemList{
+    margin: 0 4%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    border-bottom: 2px solid rgb(169, 169, 169);
+}
+.pictureS{
+    max-width: 4%;
+    margin: 0.5% 1%;
+}
+.pictureS img{
+    max-width: 100%;
+}
+.itemNameS{
+    width: 83%;
+    margin: 1.5% 1% 2%;
+}
+.itemNameS p{
+    margin: 0;
+    max-width: 100%;
+    text-align: start;
+    font-size: x-large;
+    font-weight: bold;
+}
+.priceS{
+    width: 9%;
+    background-color: rgb(210 210 210 / 53%);
+}
+.priceS p{
+    margin: 0%;
+    padding: 10% 0%;
+    max-width: 100%;
+    font-size: larger;
+    font-weight: unset;
+}
+.topSqure{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.newCategories{
+    margin-right: 4%;
+}
+.newCategories{
+    width: 10%;
+    color: white;
+    background-color: rgb(0 0 0);
+}
+.newCategories p{
+    padding: 4%;
+    margin: 0;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+}
+.newCategories p:hover{
+    background-color: rgba(84, 138, 74, 0.424)
+}
+.searchArea{
+    margin-left: 4%;
+    width: 80%;
+}
+.searchArea input{
+    width: 100%;
+    height: 3em;
+    font: revert;
+    font-weight: 500;
+    color: black;
+    border: none;
+    background-color: rgb(210 210 210 / 53%);
 }

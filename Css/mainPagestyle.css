@@ -213,3 +213,146 @@ body{
     margin-left: 3%;
     margin-right: 3%;
 }
+.blockMain{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media (max-width: 1024px){
+    #leftB{
+        display: none;
+    }
+    #rightB{
+        display: none;
+    }
+    #centerB{
+        width: 100%;
+    }
+    img{
+        width: 99%;
+    }
+}
+@media (max-width: 768px) {
+    img{
+      width: 99%;
+    }
+}
+@media (max-width: 500px) {
+    img{
+      width: 100%;
+    }
+}
+.boxBlock{
+    max-width: fit-content;
+    max-height: fit-content;
+    margin-top: 2%;
+    border-radius: 60px;
+    background-color: rgb(255 196 119 / 64%);
+}
+.textBlock{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    font-size: larger;
+}
+.textBlock h3{
+    margin-top: 0%;
+    margin-bottom: 2%;
+}
+.textBlock p{
+    margin-top: 0%;
+    margin-bottom: 4%;
+    font-size: xx-large;
+    font-weight: 600;
+    color: white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    -webkit-text-stroke: 2px black;
+    font-family: fantasy;
+}
+.vagesImgWrap{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0 ,0 ,0 ,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.vagesImg{
+    margin-left: auto;
+    width: 40vw;
+    max-height: 79vh;
+    overflow: hidden;
+    background-color: rgb(243 243 243);
+    border: 1px solid #000;
+}
+.vagesImg img{
+    max-width: 100%;
+    min-width: 100%;
+}
+.allContainer{
+    margin-right: auto;
+    width: 20vw;
+    height: 80vh;
+    max-height: 79vh;
+    border: 1px solid #000;
+    background-color: rgb(243 243 243);
+}
+.vagesName{
+    margin-top: auto;
+    height: 10%;
+    /* border: 1px solid #000; */
+    text-align: center;
+}
+.vagesDetile{
+    height: 50%;
+    /* border: 1px solid #000; */
+    border-top: 1px solid #000;;
+    border-bottom: 1px solid #000;
+    font-size: inherit;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.amountButton{
+    height: 15%;
+    /* border: 1px solid #000; */
+    border-bottom: 1px solid #000;
+    margin: 0 5% 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.amountButton p{
+    margin: 10%;
+    font-size: xx-large;
+}
+.amountButton button{
+    width: 16%;
+    font-size: xxx-large;
+    color: white;
+    background-color: rgb(0 0 0 / 77%);
+    border-radius: 35px;
+    border: none;
+}
+.vagesCartButton{
+    height: 10%;
+    margin: 12% 5% 10%;
+    /* margin-top: 10%; */
+    /* border: 1px solid #000; */
+}
+.vagesCartButton button{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    border: none;
+    font-size: x-large;
+    color: white;
+    background-color: rgb(0 0 0 / 77%);
+}
