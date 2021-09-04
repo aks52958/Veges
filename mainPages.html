@@ -3,77 +3,42 @@
     <head>
         <title>高麗菜布魯斯</title>
         <meta charset="utf-8">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"/> -->
         <link rel="stylesheet" href="./Css/mainPagestyle.css">
     
         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    
-        <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script type="text/javascript" src="./Javascript/test.js"></script> -->
     </head>
     <body>
-        <div class="header">
-            <div class="headerBrand">
-                <div class="menuBox">
-                    <div class="menuButton">
-                        <img src="./image/MENU01.png">
-                    </div>
-                </div>
-                <div class="brandBox">
-                    <div class="brandButton">
-                        <a href="./mainPages.html"><img src="./image/brandnamephoto.png"></a>
-                    </div>
-                </div>
-                <div class="cartBox">
-                    <div class="cartButton">
-                        <a href="./login.html">購物車</a>
-                    </div>
+        <header class="fixedTop">
+            <div class="menuBox">
+                <div class="menuButton">
+                    <img src="./image/MENU01.png">
                 </div>
             </div>
-        </div>
+            <div class="header">
+                <a href="./mainPages.html"><img src="./image/brandnamephoto.png"></a>
+            </div>
+            <div class="cartBox">
+                <div class="cartButton">
+                    <a href="./login.html"><img src="./image/shopCart.png"></a>
+                </div>
+            </div>
+        </header>
         <div class="wrap">
             <div class="searchBox">
                 <input type="search" id="siteSearch" name="searchBar" aria-label="Search through site content">
                 <button>搜索</button>
             </div>
             <div class="sortBox">
-                <div class="dailyMemuBox">
-                    <div class="dailyMenuPB">
-                        <a href="./mainPages.html"><img src="./image/主頁01.png"></a>
-                    </div>
-                </div>
-                <div class="comboBox">
-                    <div class="comboPB">
-                        <a href="./mainPages.html"><img src="./image/主頁04.png"></a>
-                    </div>
-                </div>
-                <div class="snakesBox">
-                    <div class="snakesPB">
-                        <a href="./mainPages.html"><img src="./image/主頁02.png"></a>
-                    </div>
-                </div>
-                <div class="clothesBox">
-                    <div class="clotherPB">
-                        <a href="./mainPages.html"><img src="./image/主頁03.png"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="sortTextBox">
-                <div class="dailyTB">
-                    <a href="./mainPages.html">今日菜單</a>
-                </div>
-                <div class="comboTB">
-                    <a href="./mainPages.html">套餐組合</a>
-                </div>
-                <div class="snakesTB">
-                    <a href="./mainPages.html">零食</a>
-                </div>
-                <div class="clothsTB">
-                    <a href="./mainPages.html">衣服</a>
-                </div>
+                <ul class="sortSqure">
+                    <li><a href="#muneTab"><img src="./image/主頁01.png"></a></li>
+                    <li><a href="#comboTab"><img src="./image/主頁04.png"></a></li>
+                    <li><a href="#snackTab"><img src="./image/主頁02.png"></a></a></li>
+                    <li><a href="#clothesTab"><img src="./image/主頁03.png"></a></li>
+                </ul>
             </div>
             <div class="menuArea">
-                <div id="leftB" class="block"></div>
-                <div id="centerB" class="blockMain">
+                <div id="muneTab" class="blockContent">
                     <div class="boxBlock">
                         <a href="./image/block01.png"><img src="./image/block01.png"></a>
                         <div class="textBlock">
@@ -145,9 +110,55 @@
                         </div>
                     </div>
                 </div>
-                <div id="rightB" class="block"></div>
+                <div id="comboTab" class="blockContent">
+                    <div class="boxBlock">
+                        <a href="./image/block01.png"><img src="./image/block01.png"></a>
+                        <div class="textBlock">
+                            <h3>高麗菜 (顆)</h3>
+                            <p>$200</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="snackTab" class="blockContent">
+                    <div class="boxBlock">
+                        <a href="./image/block01.png"><img src="./image/block01.png"></a>
+                        <div class="textBlock">
+                            <h3>高麗菜 (顆)</h3>
+                            <p>$200</p>
+                        </div>
+                    </div>
+                    <div class="boxBlock">
+                        <a href="./image/block01.png"><img src="./image/block01.png"></a>
+                        <div class="textBlock">
+                            <h3>高麗菜 (顆)</h3>
+                            <p>$200</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="clothesTab" class="blockContent">
+                    <div class="boxBlock">
+                        <a href="./image/block01.png"><img src="./image/block01.png"></a>
+                        <div class="textBlock">
+                            <h3>高麗菜 (顆)</h3>
+                            <p>$200</p>
+                        </div>
+                    </div>
+                    <div class="boxBlock">
+                        <a href="./image/block01.png"><img src="./image/block01.png"></a>
+                        <div class="textBlock">
+                            <h3>高麗菜 (顆)</h3>
+                            <p>$200</p>
+                        </div>
+                    </div>
+                    <div class="boxBlock">
+                        <a href="./image/block01.png"><img src="./image/block01.png"></a>
+                        <div class="textBlock">
+                            <h3>高麗菜 (顆)</h3>
+                            <p>$200</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
         </div>
 
         <div class="footer"></div>

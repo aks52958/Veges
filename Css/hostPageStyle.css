@@ -1,0 +1,540 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(234 234 234 / 58%);
+}
+.fixedTop{
+    position:fixed;
+    top:0;
+    right:0;
+    left:0;
+    z-index:1030;
+}
+.header{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-image:url(../image/veges.png);
+    position: sticky;
+}
+.header img{
+    max-width: 20%;
+}
+/* 製作body部分 */
+.wrap{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    margin-top: 5.3%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* 製作左邊Tab分頁﹔主頁、菜單、訂單、分析 */
+.menuContainer{
+    width: 19.7%;
+    height: 107%;
+    float: left;
+    border-right: 2px solid rgb(169, 169, 169);
+    background-color: rgb(234 234 234 / 58%);
+    /* background-color: pink; */
+    position: fixed;
+    z-index: 1030;
+}
+/* 製作菜單裡面的Tab﹔概覽、分類、商品 */
+.mcContainer{
+    width: 60%;
+    height: 100%;
+    margin-left: 20%;
+    margin-right: 20.2%;
+    background-color: rgb(234 234 234 / 58%);
+    border-right: 2px solid rgb(169, 169, 169);
+}
+.menuButtons{
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.pictureSqure{
+    margin-bottom: 20%;
+}
+.pictureSqure:hover{
+    border-radius: 50px;
+    background-color:  rgba(84, 138, 74, 0.424);
+}
+.pictureSqure img{
+    max-width: 100%;
+}
+.tabPictureSqure{
+    padding: 0%;
+    margin: 0%;
+}
+.tabPictureSqure img:hover{
+    border-radius: 50px;
+    background-color:  rgba(84, 138, 74, 0.424);
+}
+.tabPictureSqure img{
+    max-width: 110%;
+}
+.menuTab ul li{
+    list-style: none;
+    margin-bottom: 20%;
+}
+.menuContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.contentOne{
+    width: 59.6%;
+    max-height: 100%;
+    border-bottom: 2px solid rgb(169, 169, 169);
+    position: fixed;
+    background-color: rgb(234 234 234);
+}
+.coButton{
+    font-size: 224%;
+    margin: 4px 2px;
+    display: inline-block;
+    color: rgb(2, 2, 2);
+    background-color: rgb(234 234 234 / 58%);
+    border: none;
+    border-radius: 15px;
+}
+.coButton:hover{
+    background-color: rgba(84, 138, 74, 0.424)
+}
+.coTabs{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.innerContainer{
+    max-width: 100%;
+    margin-top: 6%;
+}
+.innerContent{
+    max-width: 100%;
+}
+/* 製作概覽內頁 */
+.topicSqure{
+    margin-left: 4%;
+    margin-right: 4%;
+}
+.functionBar{
+    max-width: 100%;
+    padding-bottom: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid rgb(169, 169, 169);
+}
+.searchF{
+    width: 80%;
+}
+.searchF input{
+    width: 100%;
+    height: 3em;
+    font: revert;
+    font-weight: 500;
+    color: black;
+    border: none;
+    background-color: rgb(210 210 210 / 53%);
+}
+.addF{
+    width: 5%;
+    margin: 0 1%;
+    background-color: rgb(210 210 210 / 53%);
+}
+.addF p{
+    padding: 4%;
+    margin: 0;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+    border: none;
+    background-color: rgb(210 210 210 / 53%);
+}
+.addF p:hover{
+    background-color: rgba(84, 138, 74, 0.424)
+}
+.saveF{
+    width: 5%;
+    background-color: rgb(210 210 210 / 53%);
+}
+.saveF p{
+    padding: 4%;
+    margin: 0;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+}
+.saveF p:hover{
+    background-color: rgba(84, 138, 74, 0.424)
+}
+.contentWrap{
+    max-width: 100%;
+}
+.itemListSqure{
+    max-width: 100%;
+}
+.itemList{
+    margin: 0 4%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    border-bottom: 2px solid rgb(169, 169, 169);
+}
+.pictureS{
+    max-width: 4%;
+    margin: 0.5% 1%;
+}
+.pictureS img{
+    max-width: 100%;
+}
+.itemNameS{
+    width: 83%;
+    margin: 1.5% 1% 2%;
+}
+.itemNameS p{
+    margin: 0;
+    max-width: 100%;
+    text-align: start;
+    font-size: x-large;
+    font-weight: bold;
+}
+.priceS{
+    width: 9%;
+    background-color: rgb(210 210 210 / 53%);
+}
+.priceS p{
+    margin: 0%;
+    padding: 10% 0%;
+    max-width: 100%;
+    font-size: larger;
+    font-weight: unset;
+}
+.topSqure{
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.newCategories{
+    margin-right: 4%;
+}
+.newCategories{
+    width: 12%;
+    color: white;
+    background-color: rgb(0 0 0);
+}
+.newCategories p{
+    padding: 4%;
+    margin: 0;
+    text-align: center;
+    font-size: x-large;
+    font-weight: 500;
+}
+.newCategories p:hover{
+    background-color: rgba(84, 138, 74, 0.424)
+}
+.searchArea{
+    margin-left: 4%;
+    width: 92%;
+}
+.searchArea input{
+    width: 100%;
+    height: 3em;
+    font: revert;
+    font-weight: 500;
+    color: black;
+    border: none;
+    background-color: rgb(210 210 210 / 53%);
+}
+/* 製作右邊欄位的新增商品 */
+.controllContainer form{
+    position: fixed;
+    left: 0;
+    margin-left: 80%;
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+.editContainer{
+    width: 20%;
+    height: 100%;
+    position: fixed;
+    z-index: 1030;
+    /* border: 2px solid rgb(169, 169, 169); */
+    /* background-color: rgb(243 243 243); */
+}
+.editTopSqure{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.editSave{
+    width: 30%;
+}
+.editSave input{
+    text-align: center;
+    font-size: larger;
+    border: none;
+    color: white;
+    padding: 2% 22%;
+    margin: 2% 0% 0%;
+    zoom: 120%;
+    border: 2px solid rgb(64 64 64);
+    border-radius: 10px;
+    background-color: rgb(101 101 101);
+}
+.editSave input:hover{
+    color: black;
+    background-color: rgba(84, 138, 74, 0.424)
+}
+.editName{
+    max-width: 100%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.textName{
+    padding-top: 2%;
+    border-top: 1px solid rgb(169, 169, 169);
+}
+.textName p{
+    margin: 0% 2% 2%;
+    font-weight: bold;
+}
+.editName input{
+    margin-left: 2%;
+    padding: 2%;
+    width: 90%;
+    font-size: larger;
+}
+.editDescription{
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+.textDescription{
+    padding-top: 2%;
+    border-top: 1px solid rgb(169, 169, 169);
+}
+.textDescription p{
+    margin: 0% 2% 2%;
+    font-weight: bold;
+}
+.editDescription textarea{
+    margin-left: 2%;
+    padding: 1%;
+    width: 92%;
+    font-size: x-large;
+}
+.editSoldOut{
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-top: 1px solid rgb(169, 169, 169);
+}
+.ifSoldOut{
+    margin-right: 2%;
+    margin-top: 10%;
+}
+.ifSoldOut input{
+    zoom: 175%;
+}
+.textSoldOut{
+    margin-top: 10%;
+}
+.textSoldOut p{
+    font-size: larger;
+    font-weight: 700;
+    margin: 0 auto;
+}
+.editBottomSqure{
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid rgb(169, 169, 169);
+    align-items: flex-start;
+}
+.itemCategories{
+    margin-top: 6%;
+}
+.itemCategories h1{
+    margin: 0 auto;
+}
+.addCategories{
+    margin: 4% 2% 0%;
+    width: 10%;
+}
+.addCategories p{
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    border: none;
+    color: white;
+    padding: 6% 0%;
+    margin: 6% 0% 0%;
+    background-color: rgb(74 74 74);
+}
+.price{
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid rgb(169, 169, 169);
+    align-items: center;
+    justify-content: space-between;
+}
+.textPrice{
+    margin-top: 10%;
+}
+.textPrice p{
+    margin: 0 auto;
+    margin-bottom: 17%;
+    font-weight: bold;
+    font-size: larger;
+}
+.inputPrice{
+    margin-top: 10%;
+    font-size: large;
+}
+.inputPrice input{
+    margin: 0 auto;
+    padding: 2%;
+    width: 76%;
+    zoom: 90%;
+    font-size: inherit;
+}
+.unitBox{
+    max-width: 100%;
+    margin-top: 10%;
+    margin-left: 6%;
+    margin-right: 6%;
+    display: flex;
+    flex-direction: row;
+    border-top: 1px solid rgb(169, 169, 169);
+    align-items: center;
+    justify-content: flex-start;
+}
+.textUnit{
+    margin-top: 10%;
+}
+.textUnit p{
+    margin: 0 auto;
+    margin-bottom: 17%;
+    font-weight: bold;
+    font-size: larger;
+}
+.selectUnit{
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 40%;
+}
+.selectUnit select{
+    margin: 0 auto;
+    padding: 2%;
+    max-width: 100%;
+    zoom: 90%;
+    font-size: x-large;
+}
+/* 菜單中的分類Style區域 */
+.categoriesBox{
+    max-width: 92%;
+    max-height: 100%;
+    margin-top: 4%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgb(169, 169, 169);
+}
+.categoriesName{
+    width: 33%;
+    margin-bottom: 2%;
+}
+.categoriesName p{
+    margin: 0 auto;
+    font-size: x-large;
+    font-weight: bold;
+}
+.categoriesItems{
+    width: 34%;
+    margin-bottom: 2%;
+}
+.categoriesItems p{
+    margin: 0 auto;
+    font-size: x-large;
+    font-weight: bold;
+}
+.categoriesNotes{
+    width: 33%;
+    margin-bottom: 2%;
+}
+.categoriesNotes p{
+    margin: 0 auto;
+    font-size: x-large;
+    font-weight: bold;
+}
+.categoriesLB{
+    max-width: 92%;
+    max-height: 100%;
+    margin-top: 2%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgb(169, 169, 169);
+}
+.categoriesLN{
+    width: 33%;
+    margin-bottom: 2%;
+}
+.categoriesLN a{
+    text-decoration: none;
+    color: rgb(41 121 27 / 81%);
+}
+.categoriesLN p{
+    margin: 0 auto;
+    font-size: larger;
+    font-weight: 600;
+}
+.categoriesLI{
+    width: 34%;
+    margin-bottom: 2%;
+}
+.categoriesLI p{
+    margin: 0 auto;
+    font-size: larger;
+    font-weight: 500;
+}
+.categoriesLNO{
+    width: 33%;
+    margin-bottom: 2%;
+}
+.categoriesLNO p{
+    margin: 0 auto;
+    font-size: larger;
+    font-weight: 500;
+}

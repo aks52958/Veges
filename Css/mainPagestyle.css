@@ -1,25 +1,28 @@
 body{
-    background-color: rgb(250, 250, 250);
+    background-color: rgb(234 234 234 / 58%);
     margin: 0 auto;
+}
+.fixedTop{
+    display: flex;
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030; */
+    background-image: url(../image/veges.png);
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 .header{
-    width: 100%;
-    height: 102px;
-    margin: 0 auto;
+    max-width: 60%;
     text-align: center;
 }
-.headerBrand{
-    width: 100%;
-    height: 102px;
-    margin: 0 auto;
-    background-image:url(../image/veges.png);
+.header img{
+    max-width: 35%;
 }
 .menuBox{
-    width: 20%;
-    height: 102px;
-    float: left;
-    position: inherit;
-    /* border-right: 3px solid rgb(10, 10, 10); */
+    max-width: 20%;
 }
 .menuButton{
     margin-left: 25%;
@@ -28,44 +31,27 @@ body{
     margin-bottom: 7%;
     background-color: rgb(7 45 0);
     border-radius: 15px;
+    text-align: center;
     border: 2px solid rgb(250, 250, 250);
 }
 .menuButton img{
     max-width: 65%;
 }
-.brandBox{
-    width: 60%;
-    height: 102px;
-    float: left;
-    position: inherit;
-    /* border-right: 3px solid rgb(10, 10, 10); */
-}
-.brandButton{
-    margin-left: 30%;
-    margin-right: 30%;
-}
-.brandButton a img{
-    max-width: 83%;
-}
 .cartBox{
-    width: 20%;
-    height: 102px;
-    float: right;
-    position: inherit;
+    max-width: 20%;
 }
 .cartButton{
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 7%;
-    margin-bottom: 7%;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-top: 2%;
+    margin-bottom: 2%;
     background-color: rgb(7 45 0);
     border-radius: 15px;
+    text-align: center;
     border: 2px solid rgb(250, 250, 250);
 }
-.cartButton a{
-    color: white;
-    font-size: xx-large;
-    text-decoration: none;
+.cartButton img{
+    max-width: 78%;
 }
 .wrap{
     width: 100%;
@@ -95,115 +81,25 @@ body{
     width: 100%;
     height: auto;
     text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     margin-top: 2%;
 }
-.dailyMemuBox{
-    max-width: 100%;
+.sortSqure{
+    width: 50%;
+    padding: 0;
+    margin-left: 24%;
     max-height: fit-content;
-}
-.dailyMenuPB{
-    max-width: 100%;
-    max-height: fit-content;
-    border-radius: 50%;
-    margin-left: 10%;
-}
-.dailyMenuPB img{
-    max-width: 60%;
-}
-.comboBox{
-    max-width: 100%;
-    max-height: fit-content;
-}
-.comboPB{
-    max-width: 100%;
-    max-height: fit-content;
-    border-radius: 50%;
-    margin-left: 10%;
-}
-.comboPB img{
-    max-width: 60%;
-}
-.snakesBox{
-    max-width: 100%;
-    max-height: fit-content;
-}
-.snakesPB{
-    max-width: 100%;
-    max-height: fit-content;
-    border-radius: 50%;
-    margin-left: 10%;
-}
-.snakesPB img{
-    max-width: 60%;
-}
-.clothesBox{
-    max-width: 100%;
-    max-height: fit-content;
-}
-.clotherPB{
-    max-width: 100%;
-    max-height: fit-content;
-    border-radius: 50%;
-    margin-left: 10%;
-}
-.clotherPB img{
-    max-width: 60%;
-}
-.sortTextBox{
-    width: 100%;
-    height: auto;
-    text-align: center;
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     align-items: center;
 }
-.dailyTB{
+.sortSqure li{
+    max-height: fit-content;
+    border-radius: 50%;
+    list-style-type: none;
+}
+.sortSqure li img{
     max-width: 100%;
-    height: auto;
-    margin-left: 35.9%;
-}
-.dailyTB a{
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    color: black;
-}
-.comboTB{
-    max-width: 100%;
-    height: auto;
-    margin-left: 3%;
-}
-.comboTB a{
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    color: black;
-}
-.snakesTB{
-    max-width: 100%;
-    height: auto;
-    margin-left: 5%;
-}
-.snakesTB a{
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    color: black;
-}
-.clothsTB{
-    max-width: 100%;
-    height: auto;
-    margin-left: 7%;
-}
-.clothsTB a{
-    text-decoration: none;
-    font-size: larger;
-    font-weight: bold;
-    color: black;
 }
 .menuArea{
     max-width: 100%;
@@ -213,7 +109,7 @@ body{
     margin-left: 3%;
     margin-right: 3%;
 }
-.blockMain{
+.blockContent{
     width: 100%;
     height: auto;
     display: flex;
@@ -234,10 +130,20 @@ body{
     img{
         width: 99%;
     }
+    .vagesImgWrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 }
 @media (max-width: 768px) {
     img{
       width: 99%;
+    }
+    .vagesImgWrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
     }
 }
 @media (max-width: 500px) {
