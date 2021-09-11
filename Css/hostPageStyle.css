@@ -343,7 +343,7 @@ html,body{
 }
 .editSoldOut{
     max-width: 100%;
-    margin-top: 10%;
+    margin-top: 6%;
     margin-left: 6%;
     margin-right: 6%;
     display: flex;
@@ -353,13 +353,13 @@ html,body{
 }
 .ifSoldOut{
     margin-right: 2%;
-    margin-top: 10%;
+    margin-top: 3%;
 }
 .ifSoldOut input{
     zoom: 175%;
 }
 .textSoldOut{
-    margin-top: 10%;
+    margin-top: 2%;
 }
 .textSoldOut p{
     font-size: larger;
@@ -368,7 +368,7 @@ html,body{
 }
 .editBottomSqure{
     max-width: 100%;
-    margin-top: 10%;
+    margin-top: 2%;
     margin-left: 6%;
     margin-right: 6%;
     display: flex;

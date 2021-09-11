@@ -5,6 +5,9 @@
         <meta charset="utf-8">
         <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes"/> -->
         <link rel="stylesheet" href="./Css/mainPagestyle.css">
+        <link href="bootstrap-4.5.0-dist/js/bootstrap.min.js">
+        <link rel="stylesheet" herf="js/popper.min.js">
+        <link rel="stylesheet" href="bootstrap-4.5.0-dist/css/bootstrap.min.css">
     
         <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     </head>
@@ -40,6 +43,7 @@
             <div class="menuArea">
                 <div id="muneTab" class="blockContent">
                     <div class="boxBlock">
+                        <input type="button" class="btn btn-primary" data-toggle="modal" id="btn_login" data-target="#id01" value="Login"></input>
                         <a href="./image/block01.png"><img src="./image/block01.png"></a>
                         <div class="textBlock">
                             <h3>高麗菜 (顆)</h3>
@@ -159,8 +163,39 @@
                     </div>
                 </div>
             </div>
+            <!-- 測試 -->
+            <div id="id01" class="modal">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title">高麗菜 (顆)</h1>
+                            <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+                        </div>
+                        <div class="jumbotron ">
+                            <form name="login" method="POST" algin="center">
+                                <div class="form-group">
+                                   <h3>一顆約1000-2400g</h3>
+                                </div>
+                                <div class="form-group">
+                                    <a href="./image/block01.png"><img src="./image/block01.png"></a>
+                                </div>
+                                <div class="form-group">
+                                    <p>※市場鮮食 依現場供貨重量會有些許誤差。※本產品因網路呈現略有差異，圖片僅供參考。<br>
+                                        [本店免開統一發票] 本商家所提供的商品沒有含有任何依法規應揭露之肉類食材 (上開肉品資訊是由我們所合作之商家合作夥伴所提供。如對上開資訊有任何疑問，請直接與商家合作夥伴聯繫)</p>
+                                </div>
+                                <div class="modal-footer ">
+                                    <button type="button" class="btn btn-info " data-toggle="modal" data-target="#id02" data-dismiss="modal"> - </button>
+                                    <input id="countProducts" type="text" name="cProducts" placeholder="1"></input>
+                                    <button type="button" class="btn btn-info " data-toggle="modal" data-target="#id02" data-dismiss="modal"> + </button>
+                                    <label class="col-sm-4"></label>
+                                    <input type="button" id="login_btn" name="send" class="btn btn-primary col-sm" value="加入購物車$40" data-dismiss="modal"></input>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
         <div class="footer"></div>
         <script type="module" src="./Javascript/mainPages.js"></script>
     </body>

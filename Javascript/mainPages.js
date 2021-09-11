@@ -33,4 +33,9 @@ $(document).ready(function(){
         $($(this).find('a').attr('href')).show().siblings('.blockContent').hide();
         $(this).addClass('active').siblings('.active').removeClass('active');
     });
+
+    $("#btn_login").click(function(){
+        console.log("hahahhahahao");
+        $("#id01").show();
+    })
 })
